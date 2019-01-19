@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="1"
+            android:id="@+id/tv_ques_no"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_heading2_color"
+            android:textSize="15dp"
+            android:layout_marginRight="4dp" />
+        <TextView
+            android:text="Type"
+            android:id="@+id/tv_queround_responsetype"
+            android:layout_width="0dp"
+            android:layout_weight="35"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/font_normal"
+            android:layout_marginRight="4dp" />
+        <TextView
+            android:text="TimeLine"
+            android:id="@+id/tv_queround_timeline"
+            android:layout_width="0dp"
+            android:layout_weight="35"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_normal"
+            android:textSize="14dp"
+            android:layout_marginRight="4dp" />
+        <TextView
+            android:text="Yes"
+            android:id="@+id/tv_queround_mendatory"
+            android:layout_width="0dp"
+            android:layout_weight="14"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/font_normal"
+            android:layout_marginRight="4dp" />
+        <Button
+            android:text="Start"
+            android:id="@+id/btn_start"
+            android:layout_width="65dp"
+            android:layout_weight="6"
+            android:layout_height="30dp"
+            android:textSize="12dp"
+            android:textColor="@xml/button_textcolor_selector"
+            android:background="@xml/button_effect"
+            android:clickable="true" />
+    </LinearLayout>
+</LinearLayout>

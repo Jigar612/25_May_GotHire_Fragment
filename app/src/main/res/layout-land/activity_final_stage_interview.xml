@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_white"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:fillViewport="false">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linear_accept_period_final_interview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_accepted_period_final_interview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="TIME REMAINING"
+            android:textColor="@color/font_normal"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_remain_acceptance_period_final_interview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="02 Days - 02 Hr"
+            android:textColor="@color/my_orange"
+            android:textSize="23dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_line_draw_final_interview"
+        android:layout_below="@id/linear_accept_period_final_interview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_dark_border"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_congres_msg_1_final_interview"
+        android:layout_below="@id/linear_line_draw_final_interview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_congratulate_msg1_final_inteview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:gravity="center"
+            android:text="CONGRATULATIONS!"
+            android:textColor="@color/my_orange"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_SmallHeading" />
+        <!--YOU ARE THE CHOSEN ONE.....HERE IS YOUR OFFER-->
+        <TextView
+            android:id="@+id/tv_congratulate_msg2_final_interview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:gravity="center"
+            android:text="SO CLOSE YET SO FAR... ALMOST THERE. \n HERE IS THE LAST ROUND.... FINAL INTERVIEW."
+            android:textColor="@color/my_orange"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_msg_2_final_interview"
+        android:layout_below="@id/linear_congres_msg_1_final_interview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_msg3_final_interview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="PLEASE INDICATE IF YOU ARE UNABLE TO COMMIT TO ANY OF THE PROVIDED INTERVIEW TIME SLOTS"
+            android:textColor="@color/font_heading2_color"
+            android:textSize="13dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_note_msg_final_interview"
+        android:layout_below="@id/linear_msg_2_final_interview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_disp_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1dp"
+            android:paddingRight="8dp"
+            android:gravity="center"
+            android:text="@string/note_final_interview"
+            android:textColor="@color/font_heading1_color"
+            android:textSize="13dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_main_option_final_interview"
+        android:layout_below="@id/linear_note_msg_final_interview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/linear_option_final_interview"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal">
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_text_disp_final_interview"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal">
+
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+    <LinearLayout
+        android:id="@+id/linear_buttons_final_interview"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/back_white"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_submit_final_interview"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:textColor="@xml/button_textcolor_selector"
+            android:background="@xml/button_effect"
+            android:text="Submit"/>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/down"-->
+        <!--android:background="@color/back_white"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<View-->
+            <!--android:gravity="bottom"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/my_dark_border"/>-->
+        <!--<android.support.design.widget.BottomNavigationView-->
+            <!--android:id="@+id/bottomNavigation"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:itemBackground="?attr/colorPrimary"-->
+            <!--app:itemIconTint="@xml/bottom_menu_selector"-->
+            <!--app:itemTextColor="@xml/bottom_menu_selector"-->
+            <!--app:menu="@menu/bottom_menu">-->
+        <!--</android.support.design.widget.BottomNavigationView>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>
+

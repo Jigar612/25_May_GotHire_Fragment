@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/back_white"
+    tools:context="com.jigar.android.gothire.MainContainer">
+
+    <LinearLayout
+        android:id="@+id/linear_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_white"
+        tools:layout_editor_absoluteY="18dp"
+        tools:layout_editor_absoluteX="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_container_search_list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="88"
+        android:visibility="gone">
+        <!--63+15-->
+        <ListView
+            android:id="@+id/listView2_wellcome"
+            android:minWidth="10px"
+            android:minHeight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/my_orange"
+            android:dividerHeight="3px"
+            android:scrollingCache="false"
+            android:layout_gravity="left" />
+        <TextView
+            android:text=""
+            android:textSize="16dp"
+            android:textColor="@color/my_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/welcome_tv_empty_list"
+
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true">
+        <View
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/my_dark_border"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:animateLayoutChanges="false"
+            android:splitMotionEvents="false"
+            android:background="@color/back_white"
+            app:itemIconTint="@xml/bottom_menu_selector"
+            app:itemTextColor="@xml/bottom_menu_selector"
+            app:menu="@menu/bottom_menu">
+        </android.support.design.widget.BottomNavigationView>
+        </LinearLayout>
+</LinearLayout>

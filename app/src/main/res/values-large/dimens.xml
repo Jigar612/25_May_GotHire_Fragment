@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="textSize">14dp</dimen>
+    <dimen name="textSize_SmallHeading">17dp</dimen>
+
+    <dimen name="editBoxTextSize">18dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="textSize_LargeHeading">23dp</dimen>
+    <dimen name="editBoxTextSize_large">25dp</dimen>
+    <dimen name="buttonTextSize_large">19dp</dimen>
+    <dimen name="textSize_large">24dp</dimen>
+    <dimen name="textSize_large_desc">22dp</dimen>
+    <dimen name="textSize_large_desc2">20dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">18sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">17sp</dimen>
+    <dimen name="design_bottom_navigation_margin" tools:override="true">-5dp</dimen>
+
+
+
+
+    <!--design_bottom_navigation_active_item_max_width-->
+    <!--design_bottom_navigation_active_text_size-->
+    <!--design_bottom_navigation_elevation-->
+    <!--design_bottom_navigation_height-->
+    <!--design_bottom_navigation_item_max_width-->
+    <!--design_bottom_navigation_item_min_width-->
+
+    <!--design_bottom_navigation_margin-->
+    <!--design_bottom_navigation_shadow_height-->
+    <!--design_bottom_navigation_text_size-->
+    <!--design_bottom_navigation_item_background-->
+    <!--design_bottom_navigation_item-->
+    <!--design_bottom_navigation_shadow_color-->
+    <!--&lt;!&ndash;<dimen tools:override="true" name="design_bottom_navigation_icon_padding">35dp</dimen>&ndash;&gt;-->
+    <!--&lt;!&ndash;<dimen name="design_navigation_icon_size" tools:override="true">48dp</dimen>&ndash;&gt;-->
+    <!--<dimen name="design_bottom_navigation_height" tools:override="true">56dp</dimen>-->
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear_listitem_apply_job"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@xml/list_item_selector">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="5dp"
+            android:layout_weight="19">
+            <ImageView
+                android:id="@+id/img_cpy_logo_listitem__apply_job"
+                android:layout_width="51dp"
+                android:layout_height="51dp"/>
+            <!--android:background="@drawable/ic_2"-->
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="81">
+            <TextView
+                android:id="@+id/tv_job_nm_apply_job_listitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARKETING MANAGER"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/font_heading2_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="11dp">
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="100">-->
+                <TextView
+                    android:id="@+id/tv_cpy_nm_apply_job_listitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google inc."
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/color_sponsored" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/ic_aerrow_right1"/>
+            <!--</LinearLayout>-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/tv_salary_apply_job_listitem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="43"
+                    android:text="$10000 -$50000"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/color_sponsored" />
+                <TextView
+                    android:id="@+id/tv_country_apply_job_listitem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="57"
+                    android:gravity="right"
+                    android:text="-"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/my_sky_dark" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/my_orange"/>
+    </LinearLayout>
+    </LinearLayout>

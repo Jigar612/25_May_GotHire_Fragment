@@ -1,0 +1,13 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/your_interview"-->
+    <!--android:title="Your Interviews"/>-->
+
+    <item android:id="@+id/notification"
+        android:title="Notifications"
+        android:icon="@mipmap/ic_notification"
+        app:showAsAction="always"/>
+</menu>

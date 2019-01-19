@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/back_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_interview_title"/>
+        <TextView
+            android:id="@+id/tv_heading"
+            android:text="INTERVIEWS"
+            android:textSize="18dp"
+            android:textColor="@color/my_sky_dark"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_dark_border"/>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:weightSum="100">-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/linear_main_home_interview_listitem"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:paddingTop="5dp"
+            android:background="@xml/list_item_selector">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+                <ImageView
+                    android:id="@+id/img_cpy_logo_interview_breakdown"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+                <!--android:background="@drawable/ic_2"-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80">
+                <TextView
+                    android:id="@+id/tv_heading_jobNm_interview_breakdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MARKETING MANAGER"
+                    android:textSize="@dimen/textSize_SmallHeading"
+                    android:textColor="@color/font_heading2_color" />
+
+                <TextView
+                    android:id="@+id/tv_heading_cpyNm_interview_breakdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Google inc."
+                    android:textColor="@color/font_normal"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@mipmap/ic_aerrow_right1"/>
+        </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/my_orange"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_listview_interview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--63+15-->
+        <ListView
+            android:id="@+id/list_ViewRound"
+            android:minWidth="10px"
+            android:minHeight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/my_orange"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:dividerHeight="2px"
+            android:scrollingCache="false"
+            android:layout_gravity="left" />
+        <TextView
+            android:text="Oops! no interview running"
+            android:textSize="16dp"
+            android:textColor="@color/my_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_empty_list_interview"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
+<!--</LinearLayout>-->

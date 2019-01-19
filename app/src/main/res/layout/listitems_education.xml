@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linear_listitem_apply_job"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:background="@xml/list_item_selector">
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:layout_weight="19">-->
+            <!--<ImageView-->
+            <!--android:id="@+id/img_cpy_logo_listitem__apply_job"-->
+            <!--android:layout_width="51dp"-->
+            <!--android:layout_height="51dp"/>-->
+            <!--&lt;!&ndash;android:background="@drawable/ic_2"&ndash;&gt;-->
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="100">
+                <TextView
+                    android:id="@+id/tv_education_name_listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="17dp"
+                    android:textColor="@color/my_orange" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="11dp">
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="100">-->
+                    <TextView
+                        android:id="@+id/tv_education_school_nm_listItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@color/font_normal" />
+
+                    <!--</LinearLayout>-->
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+                    <TextView
+                        android:id="@+id/tv_st_dt_education_listitem"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="60"
+                        android:text=""
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@color/font_normal" />
+                    <TextView
+                        android:id="@+id/tv_location_education_listitem"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_weight="40"
+                        android:text=""
+                        android:textSize="@dimen/textSize"
+                        android:textColor="@color/my_sky_dark" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_line_education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/my_orange"/>
+    </LinearLayout>
+</LinearLayout>

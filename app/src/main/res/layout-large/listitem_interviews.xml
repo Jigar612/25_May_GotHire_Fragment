@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_main_home_interview_listitem"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:padding="0dp"
+    android:layout_marginTop="0px"
+    android:layout_marginLeft="0px"
+    android:layout_marginRight="0px"
+    android:background="@xml/list_item_selector">
+    <!--android:paddingTop="5dp"-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="23">
+        <ImageView
+            android:id="@+id/img_cpy_logo_home_interview_listitem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+        <!--android:background="@drawable/ic_2"-->
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="65">
+        <TextView
+            android:id="@+id/tv_job_nm_home_interview_listitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MARKETING MANAGER"
+            android:textSize="@dimen/textSize_LargeHeading"
+            android:textColor="@color/font_heading2_color" />
+        <TextView
+            android:id="@+id/tv_cpy_nm_home_interview_listitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google inc."
+            android:textSize="@dimen/textSize_large_desc"
+            android:textColor="@color/font_normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linear_aerrow_hint_color"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="12">
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@mipmap/ic_aerrow_right"/>-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center"
+                android:background="@mipmap/ic_aerrow_right1"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linear_interview_color_status"
+                android:layout_width="15dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/my_orange"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingRight="15dp"
+android:paddingLeft="15dp"
+android:gravity="bottom">
+<View
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/my_orange"/>
+</LinearLayout>
+    </LinearLayout>
+    <!--</LinearLayout>-->

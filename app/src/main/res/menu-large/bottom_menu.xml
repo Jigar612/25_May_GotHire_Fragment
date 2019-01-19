@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+
+    <item android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/bottom_menu_selector_home"
+        android:title="home"
+
+        app:itemTextColor="#000000"
+        app:showAsAction="always|withText"/>
+    <!--android:icon="@mipmap/ic_user_interview"-->
+    <item android:id="@+id/bottom_nav_interviews"
+        android:icon="@drawable/bottom_menu_selector_interview"
+        android:title="interviews"
+        app:showAsAction="always|withText"
+        app:itemTextColor="#000000"/>
+
+    <item android:id="@+id/bottom_nav_track"
+        android:icon="@drawable/bottom_menu_selector_track"
+        app:itemTextColor="#000000"
+        android:title="track"
+        app:showAsAction="always|withText"/>
+
+    <item android:id="@+id/bottom_nav_account"
+        android:icon="@drawable/bottom_menu_selector_user"
+        app:itemTextColor="#000000"
+        app:showAsAction="always|withText"
+        android:title="account"/>
+
+</menu> <!--itemTextColor-->

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Focused EditText color-->
+    <item android:state_focused="true">
+
+        <shape>
+            <solid android:color="@color/signup_editbox_back" />
+            <!--<stroke android:width="2dp" android:color="@color/my_orange" />-->
+            <corners
+                android:bottomRightRadius="2dp"
+                android:bottomLeftRadius="2dp"
+                android:topLeftRadius="2dp"
+                android:topRightRadius="2dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/signup_editbox_back"
+                android:endColor="@color/signup_editbox_back"
+                android:angle="270" />
+            <!--<stroke-->
+                <!--android:width="2dp"-->
+                <!--android:color="@color/back_darkLight" />-->
+            <corners
+                android:bottomRightRadius="2dp"
+                android:bottomLeftRadius="2dp"
+                android:topLeftRadius="2dp"
+                android:topRightRadius="2dp"/>
+
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="4dp"
+    android:gravity="center"
+
+    android:background="@drawable/tags_layout">
+    <TextView
+        android:id="@+id/tag_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:minHeight="18dp"
+        android:paddingRight="5dp"
+        android:textColor="#FEFDFA"
+        android:paddingLeft="4dp"
+        android:ellipsize="end"
+        android:text="Hello"/>
+
+
+</LinearLayout>

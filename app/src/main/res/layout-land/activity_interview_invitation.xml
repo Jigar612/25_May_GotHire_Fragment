@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_white"
+    android:weightSum="100">
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="20"-->
+        <!--android:gravity="center_vertical">-->
+        <!--<ImageView-->
+            <!--android:src="@mipmap/ic_gh_logo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:id="@+id/img_logo"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="10">
+        <TextView
+            android:id="@+id/tv_heading"
+            android:text="INTERVIEW INVITATIONS"
+            android:textSize="18dp"
+            android:textColor="@color/my_sky_dark"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_weight="1">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_dark_border"/>
+    </LinearLayout>
+    <!--<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:weightSum="100"
+            android:layout_weight="15"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="Job No"
+                android:textSize="14dp"
+                android:background="@color/my_orange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_queround_remain_days"
+                android:gravity="center_horizontal"
+                android:textColor="@color/my_white_font"
+                android:layout_weight="14"
+                android:layout_marginRight="3dp" />
+            <TextView
+                android:text="Job Name"
+                android:textSize="14dp"
+                android:background="@color/my_orange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_queround_remain_days"
+                android:gravity="center_horizontal"
+                android:textColor="@color/my_white_font"
+                android:layout_weight="20"
+                android:layout_marginRight="3dp" />
+            <TextView
+                android:text="Company Name"
+                android:textSize="14dp"
+                android:background="@color/my_orange"
+                android:textColor="@color/my_white_font"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_queround_remain_hours"
+                android:layout_weight="30"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="3dp" />
+            <TextView
+                android:text="Acceptance Period"
+                android:textSize="14dp"
+                android:background="@color/my_orange"
+                android:textColor="@color/my_white_font"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_queround_remain_minute"
+                android:gravity="center_horizontal"
+                android:layout_weight="36" />
+        </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/linear_listview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="89">
+        <ListView
+            android:minWidth="10px"
+            android:minHeight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView_interview_invitation"
+            android:divider="@color/my_orange"
+            android:dividerHeight="2px"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollingCache="false"
+            android:layout_gravity="left" />
+        <!--android:layout_weight="69"-->
+        <TextView
+            android:text="Oops! no interview invitation"
+            android:textSize="16dp"
+            android:textColor="@color/my_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_empty_list"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/down"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<View-->
+            <!--android:gravity="bottom"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/my_dark_border"/>-->
+        <!--<android.support.design.widget.BottomNavigationView-->
+            <!--android:id="@+id/bottomNavigation"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:itemBackground="?attr/colorPrimary"-->
+            <!--app:itemIconTint="@xml/bottom_menu_selector"-->
+            <!--app:itemTextColor="@xml/bottom_menu_selector"-->
+
+            <!--app:menu="@menu/bottom_menu">-->
+        <!--</android.support.design.widget.BottomNavigationView>-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>

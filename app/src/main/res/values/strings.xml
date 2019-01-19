@@ -1,0 +1,50 @@
+<resources>
+    <string name="unerReview">UNDER\nREVIEW</string>
+    <string name="app_name">GotHire</string>
+
+    <string name="no_connection">Connection error</string>
+    <string name="title_activity_wellcome">Wellcome</string>
+
+    <string name="note_offer_no">
+        <font color="#09457a"><font face="fonts/Roboto-Light"> <b>NOTE :</b></font> YOU MAY BE CONTACTED DIRECTLY BY THE EMPLOYER AND PROVIDED WITH RELEVANT DOCUMENTS. PLEASE REMEMBER TO CHECK YOUR EMAIL AND RESPOND ACCORDINGLY. CHOOSE FROM ONE OF THE OPTIONS BELLOW TO NOTIFY THE EMPLOYER OF YOUR DECISION</font>
+    </string>
+
+    <string name="note_offer_with">
+       <font color="#09457a"><font face="fonts/Roboto-Light">  <b>NOTE :</b></font> REVIEW, SIGN AND UPLOAD THE OFFER DOCUMENT IN ORDER TO ACCEPT THIS JOB OFFER.</font>
+    </string>
+
+    <string name="note_final_interview">
+        <font color="#09457a"><font face="fonts/Roboto-Light"> <b>NOTE :</b> </font> YOU MAY PROCEED BY CLICKING SUBMIT IF YOU ARE AVAILABLE FOR ALL OF THE OPTIONS PROVIDED.</font>
+    </string>
+    <string name="upload_resume">
+         <u>UPLOAD RESUME</u>
+    </string>
+
+    <string name="Note_heading">
+        <font face="fonts/Roboto-Light"> <font color="#09457a"><b>NOTE :</b> </font></font>
+        </string>
+
+
+    <string name="note_QuestiorRound">
+     <font face="fonts/Roboto-Light"><font color="#808284">FILE UPLOAD questions may require the use \nof a computer or laptop.</font></font>
+    </string>
+
+    <string name="final_msg">
+      SO CLOSE YET SO FAR... ALMOST THERE. <br>HERE IS THE LAST ROUND.... FINAL INTERVIEW.</br>
+    </string>
+
+    <string name="job_title_msg">
+      SO CLOSE YET SO FAR... ALMOST THERE. <br>HERE IS THE LAST ROUND.... FINAL INTERVIEW.</br>
+    </string>
+    <string name="terms_condition">
+       <font color="#808284">I agree to </font>  <font color="#707070"><b>Terms of Usage </b></font><font color="#808284">and </font><font color="#707070"><b>Privacy Policy</b></font>
+        <!--<span>I agree to <b style="White">Terms of Usage</b></span>-->
+        <!--<font face="fonts/Roboto-Light"></font>-->
+        <!--<font face="fonts/Roboto-Medium"></font>-->
+    </string>
+
+    <!--<string name="FB_AppID">2346850915541825</string> old fb id jigar rughani-->
+    <!--new fb id jigar.anuswara-->
+    <string name="FB_AppID">1896674820362955</string>
+
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical"
+    android:background="@drawable/login_back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:paddingRight="5dp"
+        android:background="@color/login_back_shadow"
+        android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="225dp"
+        android:paddingRight="10dp"
+        android:background="@color/back_white"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_new"
+            android:layout_width="250dip"
+            android:layout_height="65dip"
+            android:id="@+id/img_logo"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/upassSection" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_valid_unm_pass"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_LargeHeading"
+                android:ems="14"
+                android:fontFamily="fonts/Roboto-Light"
+                android:textColor="@color/my_white_font"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+            <EditText
+                android:id="@+id/ed_uid"
+                android:layout_width="wrap_content"
+                android:hint="Enter Username"
+                style="@style/EditTextTheme_large"
+                android:background="@xml/edittext_effect_signup"
+                android:focusable="true"
+                android:singleLine="true"
+                android:nextFocusDown="@+id/ed_upass"
+                android:ems="14" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/valid_usernm"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_LargeHeading"
+            android:ems="14"
+            android:fontFamily="fonts/Roboto-Light"
+            android:textColor="@color/my_white_font"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/upassSection3" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/ed_upass"
+                android:layout_width="wrap_content"
+                android:hint="Enter Password"
+                android:password="true"
+                android:ems="14"
+                style="@style/EditTextTheme_large"
+                android:background="@xml/edittext_effect_signup"
+                android:nextFocusDown="@+id/btn_login"
+                android:singleLine="true"
+                android:maxLength="20" />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/valid_pass"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_LargeHeading"
+            android:ems="14"
+            android:fontFamily="fonts/Roboto-Light"
+            android:textColor="@color/my_white_font"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tv_disp_privacy_policy"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:ems="18"
+            android:text="@string/terms_condition"
+            android:textColor="@color/my_dark_font"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="180dp"
+            android:layout_height="49dp"
+            android:clickable="true"
+            android:textColor="@xml/button_textcolor_selector"
+            android:background="@xml/button_effect"
+            android:text="Login"
+            android:fontFamily="fonts/Roboto-Light"
+            android:textSize="@dimen/buttonTextSize_large"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/txt_forgot_pass"
+            android:text="Forgot Password"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="fonts/Roboto-Light"
+            android:visibility="gone"
+            android:textSize="@dimen/textSize_LargeHeading"
+            android:textColor="@color/font_white" />
+             <!--android:textColor="@xml/textbox_textcolor_selector"-->
+        <TextView
+            android:id="@+id/txt_join_now"
+            android:text="Join Now"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="fonts/Roboto-Light"
+            android:textSize="@dimen/textSize_LargeHeading"
+            android:clickable="true"
+            android:visibility="gone"
+            android:textColor="@color/font_white" />
+        <!--android:textColor="@xml/textbox_textcolor_selector"-->
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

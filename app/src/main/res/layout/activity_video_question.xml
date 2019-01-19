@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    android:background="@color/back_white"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/Linear_progress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="10"
+        android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_prepare_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PREPARE TIME"
+                android:textColor="@color/font_normal"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_prepare_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00:00:00"
+            android:textColor="@color/my_orange"
+            android:textSize="23dp" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/Linear_Question_disp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="8"-->
+        <!--android:layout_gravity="center_vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_QuestionDisplay"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:gravity="left"-->
+            <!--android:scrollbars="vertical"-->
+            <!--android:textColor="@color/my_orange"-->
+            <!--android:textSize="14dp" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_dark_border"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Linear_question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:layout_weight="8"
+        android:layout_gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/tv_quesround_pos_video"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_heading2_color"
+                android:textSize="15dp"/>
+            <TextView
+                android:text="-"
+                android:id="@+id/tv_que_videoQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+
+                android:textColor="@color/font_heading2_color"
+                android:paddingTop="3dp" />
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Linear_video"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="81"
+        android:background="@color/back_white"
+        android:layout_gravity="center_vertical">
+        <RelativeLayout
+            android:id="@+id/Relative_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp">
+
+            <VideoView
+                android:id="@+id/SampleVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"/>
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintDimensionRatio="3:5"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--<VideoView-->
+                <!--android:id="@+id/SampleVideo"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:background="@drawable/ic_video_background"/>-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="2"
+                android:scaleY="1"
+                android:id="@+id/image_video_disp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_video_background"/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:id="@+id/image_countdown"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:visibility="gone"/>-->
+
+            <Button
+                android:id="@+id/Record"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ic_rec"/>
+            <!--android:background="@mipmap/ic_recording_white"-->
+            <!--<TextView-->
+                <!--android:id="@+id/txt_disp_st_recording"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/Record"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="PRESS TO START RECORDING"-->
+                <!--android:ems="8"-->
+                <!--android:textColor="@color/font_white"-->
+                <!--android:textSize="@dimen/textSize" />-->
+
+            <Button
+                android:id="@+id/Stop"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/stop2" />
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/down"-->
+                <!--android:layout_alignParentBottom="true">-->
+                <!--<View-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/my_dark_border"/>-->
+                <!--<android.support.design.widget.BottomNavigationView-->
+                    <!--android:id="@+id/bottomNavigation"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--app:itemBackground="?attr/colorPrimary"-->
+                    <!--app:itemIconTint="@xml/bottom_menu_selector"-->
+                    <!--app:itemTextColor="@xml/bottom_menu_selector"-->
+                    <!--app:menu="@menu/bottom_menu">-->
+                <!--</android.support.design.widget.BottomNavigationView>-->
+            <!--</LinearLayout>-->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear_buttom"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="10"-->
+        <!--android:gravity="center">-->
+        <!--&lt;!&ndash;<TextView-->
+                <!--android:id="@+id/text_1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/Record"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="@drawable/begin_final1" />-->
+        <!--&lt;!&ndash;android:layout_below="@+id/tv_max_time_days"&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/Stop"-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="@drawable/stop2" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

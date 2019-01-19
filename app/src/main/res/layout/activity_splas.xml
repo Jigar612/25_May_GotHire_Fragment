@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center_vertical">
+    <!--<LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:gravity="center_vertical">-->
+    <ImageView
+        android:src="@drawable/logo_new"
+        android:layout_width="350dip"
+        android:layout_height="90dip"
+        android:id="@+id/imageView1"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/tv_gh_logo_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/font_heading2_color"
+        android:textSize="@dimen/textSize_SmallHeading"
+        android:text="Getting a job? Why so serious?"/>
+
+</LinearLayout>

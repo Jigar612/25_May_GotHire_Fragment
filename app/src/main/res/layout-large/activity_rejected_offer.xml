@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_accept_period_rejected_offer"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_accepted_period_rejected_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Information About Final Stage"
+            android:textColor="@color/font_normal"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_line_draw_rejected_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_dark_border"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_congres_msg_rejected_offer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_congratulate_msg2_rejected_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:gravity="center"
+            android:text="You reject this offer."
+            android:textColor="@color/my_orange"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_large" />
+    </LinearLayout>
+</LinearLayout>

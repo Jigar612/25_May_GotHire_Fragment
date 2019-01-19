@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:layout_marginTop="0px"
+    android:layout_marginLeft="0px"
+    android:layout_marginRight="0px">
+    <LinearLayout
+        android:id="@+id/linear_main_saveJob_listitem"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:padding="0dp"
+        android:layout_marginTop="0px"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:background="@xml/list_item_selector">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="17"
+            android:paddingBottom="15dp">
+            <ImageView
+                android:id="@+id/img_cpy_logo_saveJob_listitem"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+            <!--android:background="@drawable/ic_2"-->
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_weight="83">
+            <TextView
+                android:id="@+id/tv_job_nm_saveJob_listitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARKETING MANAGER"
+                android:paddingTop="4dp"
+                android:textSize="@dimen/textSize_LargeHeading"
+                android:textColor="@color/font_heading2_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:layout_marginTop="3dp">
+                <TextView
+                    android:id="@+id/tv_cpy_nm_saveJob_listitem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:text="Google inc."
+                    android:textSize="@dimen/textSize_large_desc"
+                    android:textColor="@color/font_normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/my_orange"/>
+    </LinearLayout>
+    </LinearLayout>

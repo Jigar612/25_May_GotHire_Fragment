@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--Focused EditText color-->
+  <item android:state_focused="true">
+
+    <shape>
+      <solid android:color="@color/back_white" />
+      <stroke android:width="2dp" android:color="@color/my_orange" />
+
+    </shape>
+  </item>
+  
+  <item>
+    <shape>
+      <gradient
+          android:startColor="@color/back_white"
+          android:endColor="@color/back_white"
+          android:angle="270" />
+      <stroke
+          android:width="2dp"
+          android:color="@color/back_darkLight" />
+      <!--<corners
+          android:radius="6dp" />-->
+    </shape>
+  </item>
+</selector>

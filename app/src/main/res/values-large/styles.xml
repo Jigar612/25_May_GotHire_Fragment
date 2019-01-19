@@ -1,0 +1,170 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="MyCustomTheam" parent="Theme.AppCompat.Light">
+        <!--<item name="android:windowBackground">@color/back_dark</item>-->
+        <!--<item name="colorPrimary">@color/my_orange</item>-->
+
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <item name="colorPrimaryDark">@color/my_sky_dark</item> <!--colorPrimaryDark-->
+        <!--myOrange-->
+        <item name="colorAccent">@color/font_heading2_color</item>
+
+        <!--For Actionbar heading-->
+        <item name="android:textColorPrimary">@color/my_sky_dark</item>
+
+        <item name="android:buttonStyle">@style/button_text</item>
+
+        <item name="colorControlHighlight">@color/my_white_font</item>
+
+        <!--Alertbox theam-->
+        <item name="alertDialogTheme">@style/MyDialogTheme</item>
+        <!--DatePickerDialog theam-->
+        <item name="android:datePickerDialogTheme" tools:targetApi="lollipop">@style/datepicker</item>
+
+        <!--For Menu-->
+        <item name="android:dropDownListViewStyle">@style/PopupMenuStyle1</item>
+        <!--For Menu Item(List)-->
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+
+        <item name="android:textViewStyle">@style/RobotFont</item>
+        <!--For menu icon-->
+        <item name="android:actionOverflowButtonStyle">@style/MyCustomTheam.OverFlow</item>
+    </style>
+    <!--***Over MyCustomTheam-->
+
+    <style name="RobotFont">
+        <item name="android:fontFamily">fonts/Roboto-Light</item>
+
+    </style>
+
+    <!--Change menu icon-->
+    <style name="MyCustomTheam.OverFlow">
+        <item name="android:src">@mipmap/ic_menu</item>
+
+    </style>
+
+    <!--ForMenu FontSize-->
+    <style name="myPopupMenuTextAppearanceLarge" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/my_dark_font</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--Popup Style Divider-->
+    <style name="PopupMenuStyle1" parent="Widget.AppCompat.ListPopupWindow">
+
+        <item name="android:divider">#e6e6e6</item>
+        <item name="android:dividerHeight">7px</item>
+        <item name="android:listSelector">@xml/popup_pressed</item>
+    </style>
+
+    <!--theam for alert dialog box textcolor black-->
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/my_orange</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@color/menu_dark_font2</item>
+        <item name="android:textSize">21dp</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@color/my_white_back</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/back_dark</item>
+        <item name="colorAccent">@color/my_orange</item>
+    </style>
+    <!--DatePickerDialog theam-->
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/my_red</item>
+        <item name="colorPrimaryDark">@color/my_dark_font</item>
+        <item name="colorAccent">@color/my_orange</item>
+    </style>
+
+
+    <!--Button Background & style-->
+    <style name="button_text" parent="Widget.AppCompat.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/font_heading2_color</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="focused_text" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <!--EditText Bacground & style-->
+    <style name="EditTextTheme" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColor">@color/menu_dark_font2</item>
+        <item name="android:background">@color/my_white_back</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!--EditText_Large Bacground & style-->
+    <style name="EditTextTheme_large" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColor">@color/menu_dark_font2</item>
+        <item name="android:background">@color/my_white_back</item>
+        <item name="android:textSize">@dimen/editBoxTextSize_large</item>
+        <item name="android:fontFamily">sans-serif</item>
+
+    </style>
+
+    <!--Desce EditText Bacground & style-->
+    <style name="DescTextTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:layout_height">82dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColor">@color/menu_dark_font2</item>
+        <item name="android:background">@color/my_white_back</item>
+        <item name="android:textSize">@dimen/editBoxTextSize_large</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <!--Desce EditText Bacground & style-->
+    <style name="DescTextTheme_large" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:layout_height">82dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColor">@color/menu_dark_font2</item>
+        <item name="android:background">@color/my_white_back</item>
+        <item name="android:textSize">@dimen/editBoxTextSize_large</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <!--Dropdown style-->
+    <style name="DropDownStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textSize">25dp</item>
+    </style>
+
+    <style name="MyCustomTheam.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyCustomTheam.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyCustomTheam.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--<style name="TextStyleBNV">-->
+        <!--<item name="android:textSize">@dimen/design_bottom_navigation_text_size</item>-->
+        <!--&lt;!&ndash;<item name="android:padding">@dimen/design_bottom_navigation_icon_padding</item>&ndash;&gt;-->
+
+        <!--<item name="textAllCaps">false</item>-->
+    <!--</style>-->
+
+
+
+    <!--<style name="NavigationViewTextAppearance" parent="TextAppearance.Body.Regular">-->
+        <!--<item name="android:textColor">@color/white</item>-->
+        <!--<item name="android:padding">0dp</item>-->
+        <!--<item name="android:layout_margin">0dp</item>-->
+    <!--</style>-->
+</resources>

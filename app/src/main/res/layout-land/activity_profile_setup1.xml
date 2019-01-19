@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_white"
+    android:orientation="vertical"
+    tools:context="com.jigar.android.gothire.ProfileSetup">
+    <ScrollView android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dip"
+        android:scrollbars="horizontal"
+        android:background="@color/back_white"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_main"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        tools:context="com.jigar.android.gothire.ProfileSetup">
+
+        <LinearLayout
+            android:id="@+id/linear_main_profile1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_gh_logo_new"
+                android:layout_width="165dip"
+                android:layout_height="60dip"
+                android:id="@+id/img_logo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_skill_qualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Skills &amp; Qualifications"
+                android:textColor="@color/font_heading1_color"
+                android:textSize="@dimen/textSize_SmallHeading"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ed_education_profile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:hint="Education"
+                android:imeOptions="flagNoExtractUi"
+                android:padding="8dp"
+                android:background="@drawable/edittext_profile"
+                android:textColor="@color/font_normal" />
+
+            <EditText
+                android:id="@+id/ed_school_profile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:hint="School"
+                android:imeOptions="flagNoExtractUi"
+                android:padding="8dp"
+                android:background="@drawable/edittext_profile"
+                android:textColor="@color/font_normal" />
+
+            <EditText
+                android:id="@+id/ed_job_title_profile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:hint="Job Title"
+                android:imeOptions="flagNoExtractUi"
+                android:padding="8dp"
+                android:background="@drawable/edittext_profile"
+                android:textColor="@color/font_normal" />
+
+            <EditText
+                android:id="@+id/ed_company_profile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:hint="Company"
+                android:imeOptions="flagNoExtractUi"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:background="@drawable/edittext_profile"
+                android:textColor="@color/font_normal" />
+            <!--<MultiAutoCompleteTextView-->
+            <!--android:id="@+id/ed_skill_profile1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:ems="12"-->
+            <!--android:hint="Skill"-->
+            <!--android:textColor="@color/font_normal"-->
+            <!--android:layout_height="wrap_content" />-->
+            <MultiAutoCompleteTextView
+                android:id="@+id/tagsEditText_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:focusableInTouchMode="true"
+                android:hint="Skill"
+                android:padding="8dp"
+                android:background="@drawable/edittext_profile"
+                android:imeOptions="actionDone"
+                android:textColor="@color/font_normal" />
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/tagsRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center|bottom"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="20dp">-->
+        <!--<Button-->
+        <!--android:id="@+id/btn_next_profile1"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:textColor="@xml/button_textcolor_selector"-->
+        <!--android:background="@xml/button_effect"-->
+        <!--android:text="NEXT STEP"/>-->
+        <!--</LinearLayout>-->
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp">
+                    <Button
+                        android:id="@+id/btn_back_profile_setup1"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/ic_back_button" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_next_profile1"
+                        android:layout_width="150dp"
+                        android:layout_height="38dp"
+                        android:textColor="@xml/button_textcolor_selector"
+                        android:background="@xml/button_effect"
+                        android:text="NEXT STEP"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>

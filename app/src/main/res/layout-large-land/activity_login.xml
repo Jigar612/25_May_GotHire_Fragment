@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:background="@drawable/login_back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:paddingRight="5dp"
+        android:background="@color/login_back_shadow"
+        android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dip"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="230dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@color/back_white"
+                android:gravity="center"
+
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="250dip"
+                    android:layout_height="55dip"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:src="@drawable/logo_new" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/upassSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_valid_unm_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_LargeHeading"
+                    android:fontFamily="fonts/Roboto-Light"
+                    android:ems="19"
+                    android:textColor="@color/my_white_font" />
+
+                <EditText
+                    android:id="@+id/ed_uid"
+                    style="@style/EditTextTheme_large"
+                    android:layout_width="wrap_content"
+                    android:ems="20"
+                    android:focusable="true"
+                    android:hint="Enter Username"
+                    android:background="@xml/edittext_effect_signup"
+                    android:nextFocusDown="@+id/ed_upass"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editBoxTextSize_large" />
+
+                <TextView
+                    android:id="@+id/valid_usernm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="19"
+                    android:fontFamily="fonts/Roboto-Light"
+                    android:textColor="@color/my_white_font"
+                    android:textSize="@dimen/textSize_LargeHeading" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/upassSection3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_upass"
+                    style="@style/EditTextTheme_large"
+                    android:layout_width="wrap_content"
+                    android:ems="20"
+                    android:hint="Enter Password"
+                    android:background="@xml/edittext_effect_signup"
+                    android:maxLength="20"
+                    android:nextFocusDown="@+id/btn_login"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editBoxTextSize_large" />
+
+                <TextView
+                    android:id="@+id/valid_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/my_white_font"
+                    android:ems="19"
+                    android:fontFamily="fonts/Roboto-Light"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/tv_disp_privacy_policy"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_LargeHeading"
+                    android:ems="18"
+                    android:text="@string/terms_condition"
+                    android:textColor="@color/my_dark_font"
+                    android:layout_width="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="180dp"
+                    android:layout_height="49dp"
+                    android:background="@xml/button_effect"
+                    android:fontFamily="fonts/Roboto-Light"
+                    android:clickable="true"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@xml/button_textcolor_selector" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_forgot_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password"
+                    android:fontFamily="fonts/Roboto-Light"
+                    android:textColor="@color/font_white"
+                    android:visibility="gone"
+                    android:textSize="@dimen/textSize_LargeHeading" />
+
+
+                <TextView
+                    android:id="@+id/txt_join_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="Join Now"
+                    android:fontFamily="fonts/Roboto-Light"
+                    android:textColor="@color/font_white"
+                    android:visibility="gone"
+                    android:textSize="@dimen/textSize_LargeHeading" />
+                <!--android:textColor="@xml/textbox_textcolor_selector"-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</LinearLayout>

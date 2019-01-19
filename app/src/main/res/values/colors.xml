@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="back_dark">#414142</color>
+    <color name="transperent">@android:color/transparent</color>
+
+
+
+    <!--<color name="my_orange">#f58220</color>-->
+    <!--<color name="my_white_back">#FFFFFF</color>-->
+
+    <color name= "search_filter_color">#CCCCCC</color>
+    <color name= "my_dark_border">#909193</color>
+    <color name= "signup_editbox_back">#e6e7e8</color>
+    <color name="my_white_font">#FFFFFF</color>
+    <color name="menu_dark_font2">#303030</color>
+    <color name= "my_dark_font">#808184</color>
+    <color name= "my_dark_font_privacy">#615f5e</color>
+
+    <color name="my_btn_text_color">#303e4e</color>
+
+    <color name="back_darkLight">#808184</color>
+    <color name="login_back_shadow">#50e6e7e8</color>
+
+    <color name="back_darkLight_ranking">#D0D2D3</color>
+    <!--<color name="back_darkLight_ranking">#D0D2D3</color>-->
+
+
+    <!--<color name="menu_color">#303030</color>-->
+
+    <!--<color name="edt_pressed">#99CBFF</color>-->
+    <color name="edt_focused">#f58220</color>
+    <color name="edt_default">#FFFFFF</color>
+
+    <color name="my_red">#ff0000</color>
+    <color name="back_white">#FFFFFF </color>
+
+    <!--new Designing-->
+    <color name="my_white_back">#ececec</color>
+
+    <color name="my_sky_dark">#00A2E0</color>
+    <color name="font_heading2_color">#0D457A</color>
+
+    <color name="my_orange">#EE4723</color>
+
+    <color name="my_orange_opecity">#b7f15137</color>
+
+    <color name="offer_document_text">#525252 </color>
+    <color name="font_normal">#808285 </color>
+    <color name="color_sponsored">#9FA5C1 </color>
+
+
+
+    <color name="font_white">#ffffff</color>
+
+    <color name="font_heading1_selected">#063661</color>
+    <color name="font_heading1_color">#1f5586</color>
+
+    <color name="font_menu_color">#2e5080</color>
+    <color name="button_back_blude">#0D457A</color>
+
+
+    <color name="applied_color">#00A0DC</color>
+    <color name="interviewing_color">#FEB14A</color>
+    <color name="reviewed_color">#FF14F8</color>
+    <color name="offer_color">#FF2826</color>
+    <color name="hire_color">#00914D</color>
+    <color name="Nohire_color">#1A1A1A</color>
+    <color name="withdraw_color">#808080</color>
+
+
+
+</resources>

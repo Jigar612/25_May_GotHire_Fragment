@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:layout_marginTop="0px"
+    android:layout_marginLeft="0px"
+    android:layout_marginRight="0px">
+
+    <LinearLayout
+        android:id="@+id/linear_main_track_listitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="0px"
+        android:background="@xml/list_item_selector"
+        android:orientation="horizontal"
+
+        android:padding="0dp"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:paddingRight="1dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/img_cpy_logo_track_listitem"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <!--android:background="@drawable/ic_2"-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="85"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/tv_job_nm_track_listitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARKETING MANAGER"
+                android:paddingTop="4dp"
+                android:textColor="@color/font_heading2_color"
+                android:textSize="@dimen/textSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tv_cpy_nm_track_listitem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:text="Google inc."
+                    android:textColor="@color/font_normal"
+                    android:textSize="@dimen/textSize" />
+
+                <TextView
+                    android:id="@+id/tv_status_track_listitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/font_normal"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_track_color_status"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:background="@color/my_orange"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="11dp"
+    android:paddingLeft="11dp"
+    android:gravity="bottom">
+        <View
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/my_orange"/>
+    </LinearLayout>
+</LinearLayout>

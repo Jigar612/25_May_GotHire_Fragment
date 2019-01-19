@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linear_accept_period_offer_with"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_accepted_period_offer_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="OFFER ACCEPTANCE PERIOD"
+            android:textColor="@color/font_normal"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_remain_acceptance_period_offer_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="02 Days - 02 Hr"
+            android:textColor="@color/my_orange"
+            android:textSize="23dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_line_draw_offer_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_dark_border"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dip"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_congres_msg_offer_with"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_congratulate_msg1_offer_with"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:ems="12"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="CONGRATS!!!"-->
+                    <!--android:textColor="@color/my_orange"-->
+                    <!--android:textSize="@dimen/textSize_SmallHeading"-->
+                    <!--android:textStyle="bold" />-->
+                <!--YOU ARE THE CHOSEN ONE.....HERE IS YOUR OFFER-->
+                <TextView
+                    android:id="@+id/tv_congratulate_msg2_offer_with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:gravity="center"
+                    android:text="WOHOOOO... CONGRATS!!! \n YOU ARE THE CHOSEN \n ONE..... \n HERE IS YOUR OFFER"
+                    android:textColor="@color/my_orange"
+                    android:textSize="@dimen/textSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_offer_document_offer_with"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_disp_msg_offer_with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="OFFER DOCUMENTS"
+                    android:textColor="@color/offer_document_text"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_disp_msg_download_offer_with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="DOWNLOAD"
+                    android:textColor="@color/my_orange"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btn_file_download_offer_with"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/ic_file_download"
+                    android:textColor="@xml/button_textcolor_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_note_offer_with"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_disp_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/note_offer_with"
+                    android:textColor="@color/font_heading1_color"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_signed_document_offer_with"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="13dp">
+
+                <TextView
+                    android:id="@+id/tv_disp_msg_signed_document_offer_with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="SIGNED DOCUMENT"
+                    android:textColor="@color/offer_document_text"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/btn_file_upload_offer_with"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/ic_file_upload1"
+                   android:layout_marginBottom="-3dp"
+                    android:textColor="@xml/button_textcolor_selector" />
+
+                <TextView
+                    android:id="@+id/tv_disp_msg_upload_offer_with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="UPLOAD"
+                    android:textColor="@color/my_sky_dark"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_buttons_offer_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp">
+
+                <Button
+                    android:id="@+id/btn_deckline_offer_with"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:background="@xml/button_effect_dark_light"
+                    android:clickable="true"
+                    android:text="Decline"
+                    android:textColor="@xml/button_textcolor_selector" />
+                <!--android:textAllCaps="false"-->
+                <Button
+                    android:id="@+id/btn_accept_offer_with"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@xml/button_effect"
+                    android:text="Accept"
+                    android:textColor="@xml/button_textcolor_selector" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_line_draw_offer_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_dark_border"/>
+    </LinearLayout>
+</LinearLayout>
+

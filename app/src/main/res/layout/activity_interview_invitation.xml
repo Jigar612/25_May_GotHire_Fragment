@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/back_white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_heading"
+            android:text="INTERVIEW INVITATIONS"
+            android:textSize="18dp"
+            android:textColor="@color/my_sky_dark"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_dark_border"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_listview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:minWidth="10px"
+            android:minHeight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView_interview_invitation"
+            android:divider="@color/my_orange"
+            android:dividerHeight="2px"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollingCache="false"
+            android:layout_gravity="left" />
+        <TextView
+            android:text="Oops! no interview invitation"
+            android:textSize="16dp"
+            android:textColor="@color/my_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_empty_list"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

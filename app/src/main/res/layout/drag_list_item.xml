@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:orientation="horizontal"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@color/back_darkLight_ranking">
+
+        <ImageView
+            android:id="@+id/iv_move_drag_list_items"
+            android:layout_width="53px"
+            android:layout_height="65px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_ranking_img"/>
+        <TextView
+            android:id="@+id/tv_name_drag_list_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="100px"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:text="Your infomation"
+            android:textSize="@dimen/textSize_SmallHeading"/>
+    </LinearLayout>
+
+</RelativeLayout>

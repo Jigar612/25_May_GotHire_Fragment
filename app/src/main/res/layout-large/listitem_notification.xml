@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txt_notification_date"
+            android:layout_gravity="right"
+            android:text="March 1th2018 - 12:06 pm"
+            android:textColor="@color/color_sponsored"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_logo_notification"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_watch"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_notification_msg"
+                    android:text="Notification "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_heading2_color"
+                    android:textSize="@dimen/textSize_LargeHeading" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="60">
+                        <TextView
+                            android:id="@+id/tv_job_nm_notification_listitem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Title"
+                            android:textSize="@dimen/textSize_large_desc"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/font_normal" />
+                        <TextView
+                            android:id="@+id/tv_cpy_nm_notification_listitem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Google inc."
+                            android:textSize="@dimen/textSize_large_desc"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/font_normal" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_weight="40">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19dp"
+                            android:textColor="@color/font_normal"
+                            android:text="Time Remaining"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+                            <TextView
+                                android:id="@+id/tv_remain_days_notification_listitem"
+                                android:text="0"
+                                android:textSize="@dimen/textSize_LargeHeading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/my_orange"
+                                android:layout_marginRight="5dp" />
+                            <TextView
+                                android:id="@+id/tv_days_disp_notification_listitem"
+                                android:text="DAYS"
+                                android:textSize="14dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/my_orange"
+                                android:layout_marginRight="10dp" />
+                            <TextView
+                                android:id="@+id/tv_remain_time_notification_listitem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00:00"
+                                android:textSize="@dimen/textSize_LargeHeading"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/my_orange" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

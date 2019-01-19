@@ -1,0 +1,135 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '25.0.2'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.jigar.android.gothire"
+        minSdkVersion 20
+
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled false
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        ndk {
+//            abiFilters 'x86', 'armeabi-v7a',"arm64-v8a"
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false//False
+            //       shrinkResourc es false //New for reduce apk size
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig getSigningConfig()
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+
+                    def appName = "GotHire"
+                    output.outputFile = new File(output.outputFile.parent,
+                            output.outputFile.name.replace("app-release", appName)
+                    )
+                }
+            }
+        }
+    }
+    repositories {
+        mavenCentral()
+        // maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        // maven { url "https://jitpack.io" } //for chips used
+    }
+    splits {
+        abi {
+            include 'armeabi', 'mips', 'mips64'
+        }
+    }
+    packagingOptions {
+        exclude '/lib/mips64/**'
+        exclude '/lib/arm64-v8a/**'
+        exclude '/lib/x86_64/**'
+
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+
+    })
+    //For Volly Library
+    //For FirebaseToken
+    compile files('libs/commons-net-ftp-2.0.jar')
+
+    //compile 'com.android.support:multidex:1.0.3'
+//    compile 'org.apache.httpcomponents:httpmime:4.+'
+//    compile 'org.apache.httpcomponents:httpcore:4.4'
+//    compile 'org.apache.httpcomponents:httpmime:4.4'
+
+
+
+    compile'com.android.support:appcompat-v7:26.+'
+    compile'com.android.support:support-v4:26.1.1'
+    compile'com.android.support:design:27.1.1'
+    compile'com.android.support.constraint:constraint-layout:1.0.2'
+    compile'com.android.support:support-annotations:27.1.1'
+    compile'com.android.volley:volley:1.0.0'
+    compile'com.google.firebase:firebase-messaging:11.0.2'
+    compile'com.google.firebase:firebase-core:11.0.2'
+    compile'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'org.apache.commons:commons-lang3:3.6'
+    compile 'com.xw.repo:bubbleseekbar:3.16'
+    compile 'com.lunger.draglistview:draglistview:2.2.0'
+    compile 'com.google.android.gms:play-services-places:11.0.2'
+    compile 'net.skoumal.fragmentback:fragment-back:0.2.3'
+    compile 'com.nex3z:notification-badge:0.1.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.5.0'
+    compile 'com.github.jakebonk:ChipView:1.0.1'
+    compile 'com.github.tcking:giraffeplayer2:0.1.19-full'
+    compile 'com.github.faruktoptas:FancyShowCaseView:1.0.0'
+    compile 'me.anwarshahriar:calligrapher:1.0'
+    compile 'com.github.alexfu:CountDownView:0.1.0'
+    compile 'com.github.abacritt:sectionedmergeadapter:0.2'
+    compile 'com.github.florent37:singledateandtimepicker:2.1.0'
+    compile 'com.github.ankitdubey021:GPSTracker:1.1'
+    compile 'com.google.android.gms:play-services-location:11.0.2'
+
+
+    compile group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
+    compile('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

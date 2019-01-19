@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_white"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/linear_congres_msg_hire"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_congratulate_msg1_hire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:gravity="center"
+            android:text="CONGRATULATIONS!"
+            android:textColor="@color/my_orange"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_SmallHeading" />
+        <!--YOU ARE THE CHOSEN ONE.....HERE IS YOUR OFFER-->
+        <TextView
+            android:id="@+id/tv_congratulate_msg2_hire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:gravity="center"
+            android:text="You are hired for this job."
+            android:textColor="@color/my_orange"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/down"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<View-->
+            <!--android:gravity="bottom"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/my_dark_border"/>-->
+        <!--<android.support.design.widget.BottomNavigationView-->
+            <!--android:id="@+id/bottomNavigation"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:itemBackground="?attr/colorPrimary"-->
+            <!--app:itemIconTint="@xml/bottom_menu_selector"-->
+            <!--app:itemTextColor="@xml/bottom_menu_selector"-->
+            <!--app:menu="@menu/bottom_menu">-->
+        <!--</android.support.design.widget.BottomNavigationView>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

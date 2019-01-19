@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home">
+
+    <item android:id="@+id/notification"
+        android:title="Notifications"
+        android:icon="@mipmap/ic_notification"
+        android:actionLayout="@layout/notification_count"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/search_jobs"
+        android:title="search"
+        android:icon="@mipmap/ic_action_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item
+        android:id="@+id/job_search_filter"
+        android:title="Job Search"
+
+        android:icon="@mipmap/ic_action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item android:id="@+id/job_apply"
+        android:title="Job Invitation" />
+
+    <item android:id="@+id/view_invitation"
+        android:title="Interview Invitations"/>
+
+    <item android:id="@+id/profile"
+        android:title="Profile"/>
+
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        />
+</menu>
+
+

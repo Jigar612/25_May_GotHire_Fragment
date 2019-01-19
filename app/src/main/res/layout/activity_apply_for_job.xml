@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/back_white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_heading"
+            android:text="APPLY FOR JOB"
+            android:textSize="18dp"
+            android:textColor="@color/my_sky_dark"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        <View
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/my_dark_border"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_listview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--72+15-->
+        <ListView
+            android:minWidth="10px"
+            android:minHeight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_view_apply_job"
+            android:divider="@color/my_orange"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:dividerHeight="2px"
+            android:scrollingCache="false"
+            android:layout_gravity="left" />
+        <TextView
+            android:text="Oops! no jobs found for apply"
+            android:textSize="16dp"
+            android:textColor="@color/my_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/job_apply_tv_empty_list"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

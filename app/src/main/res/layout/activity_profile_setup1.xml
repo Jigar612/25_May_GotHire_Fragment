@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_white"
+    android:orientation="vertical"
+    tools:context="com.jigar.android.gothire.ProfileSetup">
+<ScrollView android:id="@+id/scroll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="5dip"
+    android:scrollbars="horizontal"
+    android:background="@color/back_white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/back_white"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_main_profile1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="15dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_gh_logo_new"
+            android:layout_width="165dip"
+            android:layout_height="60dip"
+            android:id="@+id/img_logo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_skill_qualification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skills &amp; Qualifications"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/textSize_SmallHeading"
+            android:textColor="@color/font_heading1_color"/>
+
+        <EditText
+            android:id="@+id/ed_education_profile1"
+            android:layout_width="wrap_content"
+            android:ems="12"
+            android:hint="Education"
+            android:paddingTop="7dp"
+            android:paddingBottom="11dp"
+            android:background="@drawable/edittext_profile"
+            android:textColor="@color/font_normal"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/ed_school_profile1"
+            android:layout_width="wrap_content"
+            android:ems="12"
+            android:hint="School"
+            android:paddingTop="7dp"
+            android:paddingBottom="11dp"
+            android:background="@drawable/edittext_profile"
+            android:textColor="@color/font_normal"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/ed_job_title_profile1"
+            android:layout_width="wrap_content"
+            android:ems="12"
+            android:hint="Job Title"
+            android:paddingTop="7dp"
+            android:paddingBottom="11dp"
+            android:background="@drawable/edittext_profile"
+            android:textColor="@color/font_normal"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/ed_company_profile1"
+            android:layout_width="wrap_content"
+            android:ems="12"
+            android:hint="Company"
+            android:paddingTop="7dp"
+            android:paddingBottom="11dp"
+            android:visibility="gone"
+            android:background="@drawable/edittext_profile"
+            android:textColor="@color/font_normal"
+            android:layout_height="wrap_content" />
+
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/tagsEditText_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="Skill"
+            android:paddingTop="7dp"
+            android:paddingBottom="11dp"
+            android:background="@drawable/edittext_profile"
+            android:textColor="@color/font_normal"
+            android:imeOptions="actionDone"
+            android:focusableInTouchMode="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/tagsRecyclerView"
+                    android:orientation="horizontal"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="65dp"
+            android:paddingBottom="3dp"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp">
+                <Button
+                    android:id="@+id/btn_back_profile_setup1"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/ic_back_button" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_next_profile1"
+                    android:layout_width="150dp"
+                    android:layout_height="38dp"
+                    android:textColor="@xml/button_textcolor_selector"
+                    android:background="@xml/button_effect"
+                    android:text="NEXT STEP"/>
+            </LinearLayout>
+        </RelativeLayout>
+    <!--</RelativeLayout>-->
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

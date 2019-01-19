@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical"
+    android:background="@drawable/login_back2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_back_shadow"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/back_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="100dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="180dip"
+                android:layout_height="60dip"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:src="@drawable/logo_new" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:paddingRight="12dp">
+
+
+            <LinearLayout
+                android:id="@+id/linear_firstNm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+
+                android:orientation="vertical">
+                <!--style="@style/EditTextTheme"-->
+                <EditText
+                    android:id="@+id/ed_first_name_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@xml/edittext_effect_signup"
+                    android:ems="13"
+                    android:focusable="true"
+                    android:textColor="@color/menu_dark_font2"
+                    android:hint="First Name"
+                    android:nextFocusDown="@+id/ed_upass"
+                    android:paddingLeft="4dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editBoxTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_lastNm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_last_name_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@xml/edittext_effect_signup"
+                    android:ems="13"
+                    android:focusable="true"
+                    android:textColor="@color/menu_dark_font2"
+                    android:hint="Last Name"
+                    android:nextFocusDown="@+id/ed_upass"
+                    android:paddingLeft="4dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editBoxTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_email_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@xml/edittext_effect_signup"
+                    android:ems="13"
+                    android:textColor="@color/menu_dark_font2"
+                    android:focusable="true"
+                    android:hint="Email Address"
+                    android:nextFocusDown="@+id/ed_upass"
+                    android:paddingLeft="4dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editBoxTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_signUp_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@xml/edittext_effect_signup"
+                    android:ems="13"
+                    android:focusable="true"
+                    android:textColor="@color/menu_dark_font2"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/ed_upass"
+                    android:paddingLeft="4dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/editBoxTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/tv_disp_privacy_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="18"
+                    android:text="@string/terms_condition"
+                    android:textColor="@color/my_dark_font"
+                    android:textSize="@dimen/textSize_terms_condition" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="190dp"
+                    android:layout_height="37dp"
+                    android:background="@xml/button_effect"
+                    android:clickable="true"
+                    android:text="Create New Account"
+                    android:textAllCaps="false"
+                    android:textColor="@xml/button_textcolor_selector" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

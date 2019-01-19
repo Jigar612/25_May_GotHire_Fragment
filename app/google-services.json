@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "478594763902",
+    "firebase_url": "https://gothire-09may.firebaseio.com",
+    "project_id": "gothire-09may",
+    "storage_bucket": "gothire-09may.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478594763902:android:5d14a9eaefea7758",
+        "android_client_info": {
+          "package_name": "com.jigar.android.gothire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478594763902-f4q3f243ntkm8tbjn4989va5bes68qm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jigar.android.gothire",
+            "certificate_hash": "6517f32c2fa8ae1cd020da46ebbd7efd8684903e"
+          }
+        },
+        {
+          "client_id": "478594763902-thahe76h4lrvsrhmd012gfqrl6eq0pst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSjoxZ_07e0uQvGpL1MyYUxo8XkHCgBBA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478594763902-thahe76h4lrvsrhmd012gfqrl6eq0pst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

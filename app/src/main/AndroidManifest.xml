@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jigar.android.gothire">
+
+    <!-- <uses-sdk android:minSdkVersion="16" /> -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- For InternetConnection -->
+
+
+    <!-- //For current location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <!-- ******** -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Check Interntet connection -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Camera Permission -->
+    <!-- <uses-feature android:name="android.hardware.camera" /> -->
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- <uses-feature android:name="android.hardware.camera.autofocus" /> -->
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- for debugging -->
+    <!-- <uses-permission android:name="android.permission.SET_DEBUG_APP" /> -->
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+
+    <!-- android:name=".AppConfig" -->
+    <application
+        android:name=".AppConfig"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_gh_logo"
+        android:label="GotHire"
+        android:roundIcon="@mipmap/ic_gh_logo"
+        android:supportsRtl="true"
+        android:theme="@style/MyCustomTheam"
+        tools:replace="android:label">
+
+        <!-- android:icon="@mipmap/ic_new_logo_gh" -->
+        <!-- android:roundIcon="@mipmap/ic_new_logo_gh" -->
+
+        <activity
+            android:name=".Splas"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCustomTheam.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCustomTheam.NoActionBar" />
+        <activity
+            android:name=".JobSearchFilter"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCustomTheam.NoActionBar" />
+        <activity
+            android:name=".Login_with"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCustomTheam.NoActionBar" />
+        <activity
+            android:name=".SignUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCustomTheam.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_gh_logo_new" />
+        <!-- [START firebase_service] -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseIDService"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+
+            <!-- android:exported="false" -->
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- [END firebase_service] -->
+        <activity
+            android:name=".ProfileSetup"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/MyCustomTheam.NoActionBar" />
+        <activity
+            android:name=".ProfileSetup1"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/MyCustomTheam.NoActionBar" />
+        <activity
+            android:name=".ProfileSetup2"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/MyCustomTheam.NoActionBar" />
+        <activity
+            android:name=".MainContainer"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCustomTheam.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- adjustPan -->
+        <!-- android:windowSoftInputMode="stateHidden|adjustResize|adjustPan|stateAlwaysHidden" -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBXJqf2W1LSmPseH3lQp0ChkQICrfNfV2A" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FB_AppID" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- <activity android:name=".UserProfile"></activity> -->
+        <!-- <activity android:name=".UserProfileView"></activity> -->
+        <activity android:name=".add_pipe_multipipe">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

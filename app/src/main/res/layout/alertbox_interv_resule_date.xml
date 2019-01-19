@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <EditText
+        android:id="@+id/ed_alert_st_dt"
+        android:layout_width="match_parent"
+        style="@style/EditTextTheme"
+        android:hint="Click here"
+        android:background="@xml/edittext_effect"
+
+        android:textSize="18dp"
+        android:singleLine="true"
+        android:focusable="true"
+        android:nextFocusDown="@+id/ed_alert_end_dt"
+        android:ems="15"
+        android:layout_marginTop="5dp" />
+    <!--fontPath="fonts/HelveticaNeue.ttf"-->
+    <EditText
+        android:id="@+id/ed_alert_end_dt"
+        android:layout_width="match_parent"
+        style="@style/EditTextTheme"
+        android:hint="Click here"
+
+        android:background="@xml/edittext_effect"
+        android:textSize="18dp"
+        android:ems="15"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:layout_marginTop="10dp" />
+    <!--fontPath="fonts/HelveticaNeue.ttf"-->
+</LinearLayout>

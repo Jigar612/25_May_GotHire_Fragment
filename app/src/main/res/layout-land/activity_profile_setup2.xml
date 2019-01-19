@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_white"
+    android:orientation="vertical"
+    tools:context="com.jigar.android.gothire.ProfileSetup">
+<ScrollView android:id="@+id/scroll1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="5dip"
+    android:scrollbars="horizontal"
+    android:background="@color/back_white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_main"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_white"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context="com.jigar.android.gothire.ProfileSetup">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/back_white"
+            android:gravity="center">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_gh_logo_new"
+                android:layout_width="165dip"
+                android:layout_height="60dip"
+                android:id="@+id/img_logo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_lets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s Hook you up!"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/textSize_SmallHeading"
+                android:textColor="@color/font_heading1_color"/>
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/ed_industry_profile2"
+                android:layout_width="wrap_content"
+                android:imeOptions="flagNoExtractUi"
+                android:ems="15"
+                android:hint="What Industries do you fancy ?"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:background="@drawable/edittext_profile"
+                android:textColor="@color/font_heading1_color"
+                android:textColorHint="@color/font_heading1_color"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/tagsRecyclerView_profile2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+
+                    <!--<MultiAutoCompleteTextView-->
+                        <!--android:id="@+id/ed_industry_profile2"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:ems="15"-->
+                        <!--android:hint="What Industries do you fancy ?"-->
+                        <!--android:textColor="@color/font_normal"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <EditText
+                android:id="@+id/ed_nxt_job_title_profile2"
+                android:layout_width="wrap_content"
+                android:ems="15"
+                android:hint="What’s your next job title? :D"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:imeOptions="flagNoExtractUi"
+                android:background="@drawable/edittext_profile"
+                android:textColor="@color/font_heading1_color"
+                android:textColorHint="@color/font_heading1_color"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/btn_join_me_profile2"
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:textColor="@xml/button_textcolor_selector"
+                android:background="@xml/button_effect"
+                android:textAllCaps="false"
+                android:text="Job me up!"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

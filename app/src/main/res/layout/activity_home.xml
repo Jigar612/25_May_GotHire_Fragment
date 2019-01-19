@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_white"
+
+    tools:context="com.jigar.android.gothire.Home">
+    <LinearLayout
+        android:id="@+id/linear_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            android:background="@color/back_white"
+            android:layout_alignParentTop="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_weight="5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:paddingRight="5dp"
+                android:src="@mipmap/ic_notification"
+                android:actionLayout="@layout/notification_count"/>
+                   <com.nex3z.notificationbadge.NotificationBadge
+                       android:id="@+id/badge"
+                       android:layout_toRightOf="@id/notification"
+                       android:layout_marginLeft="-19dp"
+                       android:layout_marginTop="1dp"
+                       android:background="@drawable/badge_bg"
+                       app:maxTextLength="2"
+                       app:badgeTextSize="8dp"
+                       android:layout_width="17dp"
+                       android:layout_height="17dp">
+
+                   </com.nex3z.notificationbadge.NotificationBadge>
+                </RelativeLayout>
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="90"
+                android:padding="10dp"
+                android:hint="Job Title or Keyword"
+                android:textColor="@color/my_dark_border"
+                android:textSize="16dp"
+                android:paddingLeft="11dp"
+                android:drawableLeft="@drawable/places_ic_search"
+                android:background="@xml/editbox_home_searchbox"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/job_search_filter"
+                android:layout_weight="5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/ic_menu"/>
+            </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        <!--<View-->
+            <!--android:gravity="bottom"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/my_dark_border"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_text_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/job_got"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="7dp"
+            android:textColor="@color/font_normal"
+            android:text="JOBS? WE GOTCHU!"/>
+        <View
+            android:id="@+id/view_line"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/my_orange"/>
+        <!--<TextView-->
+            <!--android:id="@+id/sponsored"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:textColor="@color/color_sponsored"-->
+            <!--android:text="sponsored"/>-->
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView2_wellcome"
+            android:minWidth="10px"
+            android:minHeight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollingCache="false"
+            android:layout_gravity="left" />
+        <TextView
+            android:text=""
+            android:textSize="16dp"
+            android:textColor="@color/my_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/welcome_tv_empty_list"
+            android:layout_gravity="center" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_badge_add"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+</LinearLayout>
+
